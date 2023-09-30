@@ -17,7 +17,7 @@ app.post("/calc", function(req, res){
 
                 //overnight
 
-                if(mov.ds.getHouts() >= 22 || mov.ds.getHouts() <= 6) {
+                if(mov.ds.getHours() >= 22 || mov.ds.getHours() <= 6) {
 
                     // not sunday
                     if(mov.ds.getDay() !== 0) {
