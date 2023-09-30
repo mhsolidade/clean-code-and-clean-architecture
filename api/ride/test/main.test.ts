@@ -13,7 +13,7 @@ test("Deve fazer o cálculo do preço de uma corrida durante o dia", async funct
     expect(response.data.price).toBe(21);    
 })
 
-test.only("Se a distância for inválida deve lançar um erro", async function () {
+test("Se a distância for inválida deve lançar um erro", async function () {
 	const input = {
 		segments: [
 			{ distance: -10, date: "2021-03-01T10:00:00" }
